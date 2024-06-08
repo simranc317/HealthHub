@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html>
-        background-image:url(Daily, Wekly, and Monthly Planner (2).jpeg);
-    background-size:cover;
-}
+  <link rel="shortcut icon" type="image/x-icon" href="healthhub.jpg" />
     <title>Colored Banner</title>
     <style>
+        #title_img{
+            width: 28px;
+            height: 28px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #acbda1;
+            padding: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            align-items: left;
+        }
       /* CSS for the colored banner */
       .banner {
         background-color: #acbda1; /* Choose your desired color */
@@ -15,6 +42,17 @@
     </style>
   </head>
   <body>
+    <div class="navbar">
+        <img id = "title_img" src="healthhub.jpg">
+          <div class="menu">
+              <a href="homePage.html">Home</a>
+              <a href="nutritionPage.html">Nutrition</a>
+              <a href="exercisePage.html">Exercise</a>
+              <a href="mentalHealthPage.html">Mental Health</a>
+              <a href="healthChallengesPage.html">Health Challenges</a>
+              <a href="donatePage.html">Donate</a>
+          </div>
+      </div>
     <!-- Colored banner -->
     <div class="banner">
       <h1>Mental Health</h1>
@@ -41,11 +79,32 @@
   </head>
   <body>
    <style>
+      body{
+        background-image: url('mentalBackground.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
       /* CSS to center the title */
       p {
         text-align: center;
       }
+      footer{
+        background-color: black;
+      }
+      .c_footer{
+        color: white;
+        text-align: center;
+      }
+      .container {
+            background: rgba(255, 255, 255, 0.8);
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 1200px;
+            border-radius: 10px;
+        }
     </style>
+    <div class="container">
   <p>Mental health is a fundamental aspect of our overall well-being, influencing how we think, feel, and behave in daily life. It encompasses our emotional, psychological, and social well-being, shaping how we handle stress, relate to others, and make choices. Just as we prioritize physical health, it's crucial to recognize the importance of mental health and to actively nurture it. </p>
    <p> However, mental health challenges can affect anyone, regardless of age, gender, or background. It's essential to break down the stigma surrounding mental health issues and promote understanding and acceptance. Seeking support, whether through therapy, support groups, trusted individuals, or websites like ours, is a courageous step towards healing. Though these practices,we can create a more compassionate and inclusive society where everyone's mental health is valued and supported.</p>
     <body style="text-align: center;">
@@ -73,12 +132,15 @@
     <body>
       <p>Click <a href="https://example.com/30-day-tracker" target="_blank">here</a> to access the online 30-day tracker.</p>
     </body>
-    
+  </div>
+</body>
     <!-- Footer -->
      <footer>
-       <p>&copy; 2024 HealthHub. All rights reserved.</p>
+      <br>
+       <p class = "c_footer">&copy; 2024 HealthHub. All rights reserved.</p>
+      <br>
      </footer>
-   </body>
+
    </html>
    
 </html>
