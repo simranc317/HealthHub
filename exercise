@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise Guide</title>
+    <style>
+        body {
+            background-image: url('exercise-bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+        h1, h2, h3 {
+            color: #acbda1;
+        }
+        p {
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: disc;
+            margin: 10px 0 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Exercise Guide</h1>
+        <p>Welcome to the ultimate guide on exercise! Whether you are a beginner or a seasoned athlete, this guide will provide you with valuable information on the importance of exercise, different types of exercises, and tips to help you stay active and healthy.</p>
+
+        <h2>Benefits of Exercise</h2>
+        <p>Regular physical activity has numerous benefits, including:</p>
+        <ul>
+            <li>Improved cardiovascular health</li>
+            <li>Increased muscle strength and flexibility</li>
+            <li>Better mental health and mood</li>
+            <li>Weight management</li>
+            <li>Enhanced immune system function</li>
+        </ul>
+
+        <h2>Types of Exercises</h2>
+        <h3>Aerobic Exercise</h3>
+        <p>Aerobic exercises, also known as cardio, include activities like running, cycling, and swimming. These exercises increase your heart rate and improve cardiovascular health.</p>
+
+        <h3>Strength Training</h3>
+        <p>Strength training exercises, such as weight lifting and resistance band exercises, help build muscle mass and improve overall strength.</p>
+
+        <h3>Flexibility Exercises</h3>
+        <p>Flexibility exercises, including stretching and yoga, help improve the range of motion in your joints and prevent injuries.</p>
+
+        <h3>Balance Exercises</h3>
+        <p>Balance exercises, such as tai chi and stability ball exercises, help improve stability and prevent falls, especially in older adults.</p>
+
+        <h2>Exercise Tips</h2>
+        <p>Here are some tips to help you get the most out of your workouts:</p>
+        <ul>
+            <li>Start slowly and gradually increase the intensity and duration of your workouts.</li>
+            <li>Set realistic goals and track your progress.</li>
+            <li>Mix different types of exercises to keep your routine interesting and well-rounded.</li>
+            <li>Stay hydrated and maintain a balanced diet to support your exercise regimen.</li>
+            <li>Listen to your body and rest when needed to avoid overtraining and injuries.</li>
+        </ul>
+    </div>
+  <head>
+    <meta charset="UTF-8">
+    <title>Example Exercise Video</title>
+    <style>
+        /* Center the video horizontally */
+        .video-container {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IT94xC35u6k" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <meta charset="UTF-8">
+      <title>Example Exercise Video</title>
+      <style>
+          /* Center the video horizontally */
+          .video-container {
+              display: flex;
+              justify-content: center;
+          }
+      </style>
+    </head>
+    <body>
+      <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/cbKkB3POqaY" frameborder="0" allowfullscreen></iframe>
+      </div>
+  </body>
+</html>
