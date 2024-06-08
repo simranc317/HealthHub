@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage with Top Menu</title>
     <style>
+        #title_img{
+            width: 28px;
+            height: 28px;
+        }
+        html{
+            background-image:url(homeBack.jpeg);
+            background-size:contain;
+        }
         body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             margin: 0;
             padding: 0;
         }
@@ -34,21 +42,20 @@
         .navbar .logo {
             font-size: 24px;
             font-weight: bold;
+            align-items: left;
         }
 
         .home-screen {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f4;
             text-align: center;
         }
 
         .home-screen h1 {
             font-size: 48px;
-            margin: 20px 0 10px;
+            margin: 0 10px;
         }
 
         .home-screen p {
@@ -65,15 +72,16 @@
 </head>
 <body>
     <div class="navbar">
-      <img src="path/to/your/image.jpg">
+      <img id = "title_img" src="healthhub.jpg">
         <div class="menu">
-            <a href="index.html">Nutrition</a>
+            <a href="homePage.html">Home</a>
+            <a href="nutritionPage.html">Nutrition</a>
             <a href="about.html">Exercise</a>
             <a href="services.html">Mental Health</a>
             <a href="contact.html">Health Challenges</a>
         </div>
     </div>
-
+    <br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="home-screen" id="home">
         <div>
             <h1>HealthHub</h1>
