@@ -1,6 +1,99 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="healthhub.jpg" />
+    <title>Homepage with Top Menu</title>
+    <style>
+        #title_img{
+            width: 28px;
+            height: 28px;
+        }
+        html{
+            background-image:url(homeBack.jpeg);
+            background-size:contain;
+        }
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #acbda1;
+            padding: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            align-items: left;
+        }
+
+        .home-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .home-screen h1 {
+            font-size: 48px;
+            margin: 0 10px;
+        }
+
+        .home-screen p {
+            font-size: 24px;
+            color: #555;
+            margin: 10px 0 20px;
+        }
+
+        .home-screen img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+      <img id = "title_img" src="healthhub.jpg">
+        <div class="menu">
+            <a href="homePage.html">Home</a>
+            <a href="nutritionPage.html">Nutrition</a>
+            <a href="about.html">Exercise</a>
+            <a href="services.html">Mental Health</a>
+            <a href="contact.html">Health Challenges</a>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="home-screen" id="home">
+        <div>
+            <h1>HealthHub</h1>
+            <p>slogan:)</p>
+        </div>
+    </div>
+</body>
+</html>
     <title>Health Hub</title>
     <link rel="stylesheet" href="nutritionStyle.css" type="text/css"/>
     </head>
