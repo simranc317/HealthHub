@@ -7,6 +7,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="healthhub.jpg" />
     <title>Homepage with Top Menu</title>
     <style>
+        #title_img{
+            width: 28px;
+            height: 28px;
+        }
         body {
             background-image: url('background.jpg');
             background-size: cover;
@@ -22,7 +26,7 @@
             justify-content: space-between;
             align-items: center;
             background-color: #acbda1;
-            padding: 10px 20px;
+            padding: 20px;
         }
 
         .navbar a {
@@ -54,7 +58,7 @@
 
         .home-screen h1 {
             font-size: 48px;
-            margin: 20px 0 10px;
+            margin: 0 10px;
         }
 
         .home-screen p {
@@ -73,7 +77,7 @@
   <body>
 
     <div class="navbar">
-        <img src="healthhub.jpg">
+      <img id = "title_img" src="healthhub.jpg">
         <div class="menu">
             <a href="homePage.html">Home</a>
             <a href="nutritionPage.html">Nutrition</a>
