@@ -1,8 +1,4 @@
-<!DOCTYPE html> {
-<!DOCTYPE html>{
- background-image:url(Daily, Wekly, and Monthly Planner (3).jpeg);
-    background-size:cover;
-}
+<!DOCTYPE html>
 <html lang="en"> 
 <head>
   <head>
@@ -11,13 +7,28 @@
     <link rel="shortcut icon" type="image/x-icon" href="healthhub.jpg" />
     <title>Health Challenges</title>
     <style>
+        
+        #title_img{
+            width: 28px;
+            height: 28px;
+        }
+        html{
+            background-image:url(challengeBackground.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
         body {
-     .navbar {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             background-color: #acbda1;
-            padding: 10px 20px;
+            padding: 20px;
         }
 
         .navbar a {
@@ -35,11 +46,12 @@
         .navbar .logo {
             font-size: 24px;
             font-weight: bold;
+            align-items: left;
         }
+        body{
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
         .title {
             background-color: #333;
@@ -66,6 +78,8 @@
             background-color: #fff;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width:50%;
+            margin: 0 auto;
         }
         h2 {
             color: #333;
@@ -85,17 +99,25 @@
         .challenge p {
             margin-bottom: 5px;
         }
+        footer{
+        background-color: black;
+        }
+        .c_footer{
+           color: white;
+           text-align: center;
+         }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <img src="jpg">
+        <img id = "title_img" src="healthhub.jpg">
         <div class="menu">
-            <a href="index.html">Nutrition</a>
-            <a href="about.html">Exercise</a>
-            <a href="services.html">Mental Health</a>
-            <a href="contact.html">Health Challenges</a>
-            <a href="contact.html">Donate</a>
+            <a href="homePage.html">Home</a>
+            <a href="nutritionPage.html">Nutrition</a>
+            <a href="exercisePage.html">Exercise</a>
+            <a href="mentalHealthPage.html">Mental Health</a>
+            <a href="healthChallengesPage.html">Health Challenges</a>
+            <a href="donatePage.html">Donate</a>
         </div>
     </div>
     <div class="title">
@@ -128,8 +150,10 @@
             <a href="#">Join Challenge</a>
         </div>
     </section>
-    <footer>
-        <p>&copy; 2024 HealthHub. All Rights Reserved.</p>
-    </footer>
 </body>
+<footer>
+    <br>
+     <p class = "c_footer">&copy; 2024 HealthHub. All rights reserved.</p>
+    <br>
+   </footer>
 </html>
