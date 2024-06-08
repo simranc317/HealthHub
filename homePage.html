@@ -27,6 +27,7 @@
             align-items: center;
             background-color: #acbda1;
             padding: 20px;
+            overflow-x: scroll;
         }
 
         .navbar a {
@@ -34,6 +35,7 @@
             text-decoration: none;
             padding: 14px 20px;
             text-align: center;
+            overflow-x: scroll;
         }
 
         .navbar a:hover {
@@ -51,7 +53,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 100vh;
+            height: 20vh;
             text-align: center;
         }
 
@@ -72,7 +74,7 @@
             height: auto;
         }
         footer{
-        background-color: black;
+            background-color: black;
         }
         .c_footer{
            color: white;
@@ -100,6 +102,107 @@
         </div>
     </div>
 </body>
+<head>
+<style>
+    /* CSS for styling the chatbox */
+    .try{
+        position:relative;
+        left:75%;
+    }
+    #chatbox {
+      width: 200px;
+      height: 300px;
+      border: 1px solid #ccc;
+      overflow-y: scroll;
+      padding: 10px;
+      margin-bottom: 20px;
+      background-color: #ffffff;
+    }
+    .message {
+      margin-bottom: 10px;
+    }
+    .user {
+      color: blue;
+    }
+    .bot {
+      color: green;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="try">
+    <!-- Chatbox interface -->
+    <div id="chatbox"></div>
+  
+    <!-- Input form -->
+    <form id="messageForm">
+      <input type="text" id="messageInput" placeholder="Type your message...">
+      <button type="submit">Send</button>
+    </form>
+  
+    <!-- JavaScript for handling message submission and responses -->
+    <script>
+      // Selecting elements
+      const messageForm = document.getElementById('messageForm');
+      const messageInput = document.getElementById('messageInput');
+      const chatbox = document.getElementById('chatbox');
+  
+      // Function to handle message submission and responses
+      function sendMessage(message) {
+        // Create new message element for user message
+        const userMessageElement = document.createElement('div');
+        userMessageElement.classList.add('message', 'user');
+        userMessageElement.textContent = "You: " + message;
+  
+        // Append user message element to chatbox
+        chatbox.appendChild(userMessageElement);
+  
+        // Send message to bot and receive response
+        fetchBotResponse(message);
+      }
+  
+      // Function to fetch bot response from a mock API
+      function fetchBotResponse(message) {
+        // Mock API endpoint (replace with actual API endpoint if available)
+        const apiUrl = 'https://api.example.com/chatbot';
+  
+        // Mock API request (replace with actual fetch request if available)
+        setTimeout(function() {
+          // Simulated bot response
+          const botResponse = "Bot: Hi there! How can I help you?"; // Example bot response
+  
+          // Create new message element for bot response
+          const botMessageElement = document.createElement('div');
+          botMessageElement.classList.add('message', 'bot');
+          botMessageElement.textContent = botResponse;
+  
+          // Append bot message element to chatbox
+          chatbox.appendChild(botMessageElement);
+  
+          // Scroll chatbox to bottom
+          chatbox.scrollTop = chatbox.scrollHeight;
+        }, 1000); // 1 second delay (simulated API response time)
+      }
+  
+      // Event listener for form submission
+      messageForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+  
+        // Get message input value
+        const message = messageInput.value;
+  
+        // Send message
+        sendMessage(message);
+  
+        // Clear message input
+        messageInput.value = '';
+      });
+    </script>
+    </div>
+    <br><br><br><br>
+  </body>
+  </html>
+  
 <footer>
     <br>
      <p class = "c_footer">&copy; 2024 HealthHub. All rights reserved.</p>
