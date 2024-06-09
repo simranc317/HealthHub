@@ -1,36 +1,26 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="shortcut icon" type="image/x-icon" href="healthhub.jpg" />
-       <title>HealthHub</title>
-       <style>
-           body {
-               background-image: url('donateBackground.jpg');
-               background-size: cover;
-               background-repeat: no-repeat;
-               background-attachment: fixed;
-               font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-               margin: 0;
-               padding: 0;
-           }
-   
-           #title_img{
-            width: 28px;
-            height: 28px;
-        }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to Support Medical Technology</title>
+    <style>
         body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             margin: 0;
             padding: 0;
         }
+
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             background-color: #acbda1;
-            padding: 20px;
+            padding: 10px 20px;
         }
 
         .navbar a {
@@ -48,103 +38,150 @@
         .navbar .logo {
             font-size: 24px;
             font-weight: bold;
-            align-items: left;
         }
-   
-           .container {
-               max-width: 800px;
-               margin: 20px auto;
-               padding: 20px;
-               background-color: #fff;
-               border-radius: 5px;
-               box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-           }
-   
-           h1,
-           h2 {
-               text-align: center;
-               color: #acbda1;
-           }
-   
-           p {
-               color: #666;
-               text-align: center;
-           }
-   
-           form {
-               margin-top: 20px;
-               text-align: center;
-           }
-   
-           label {
-               display: block;
-               margin-bottom: 5px;
-           }
-   
-           input[type="text"],
-           input[type="email"],
-           input[type="number"] {
-               width: 100%;
-               padding: 8px;
-               margin-bottom: 10px;
-               border: 1px solid #ccc;
-               border-radius: 5px;
-               box-sizing: border-box;
-           }
-   
-           input[type="submit"] {
-               background-color: #acbda1;
-               color: #fff;
-               padding: 10px 20px;
-               border: none;
-               border-radius: 5px;
-               cursor: pointer;
-           }
-   
-           input[type="submit"]:hover {
-               background-color: #004080;
-           }
-           footer{
-              background-color: black;
-              position: absolute;
-              bottom: 0;
-              width: 100%;
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            color: #acbda1;
+        }
+
+        p {
+            color: #666;
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #acbda1;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #004080;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="jpg">
+        <div class="menu">
+            <a href="index.html">Nutrition</a>
+            <a href="about.html">Exercise</a>
+            <a href="services.html">Mental Health</a>
+            <a href="contact.html">Health Challenges</a>
+            <a href="contact.html">Donate</a>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Support Our Fundraiser</h1>
+        <p>We hope that after going through our website, you understand the significance of staying healthy. Our website will collect donations to provide to several foundations that support innovation in medical technology. In summary, your donation will help us improve the medical field and we appreciate you supporting our website :)</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="amount">Donation Amount ($):</label>
+            <input type="number" id="amount" name="amount" min="1" required>
+            <input type="submit" value="Donate Now">
+        </form>
+    </div>
+</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Newsletter Subscription</title>
+        <style>
+            body {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
             }
-            .c_footer{
-                 color: white;
-                 text-align: center;
+            .subscription-form {
+                max-width: 600px;
+                margin: 20px auto;
+                padding: 20px;
+                border: 1px solid #fff;
+                border-radius: 5px;
             }
-       </style>
-   </head>
-   <body>
-       <div class="navbar">
-            <img id = "title_img" src="healthhub.jpg">
-           <div class="menu">
-            <a href="homePage.html">Home</a>
-            <a href="nutritionPage.html">Nutrition</a>
-            <a href="exercisePage.html">Exercise</a>
-            <a href="mentalHealthPage.html">Mental Health</a>
-            <a href="healthChallengesPage.html">Health Challenges</a>
-            <a href="donatePage.html">Donate</a>
-           </div>
-       </div>
-       <div class="container">
-           <h1>Support Our Fundraiser</h1>
-           <p>We hope that after going through our website, you understand the significance of staying healthy. Our website will collect donations to provide to several foundations that support innovation in medical technology. In summary, your donation will help us improve the medical field and we appreciate you supporting our website :)</p>
-           <form action="#" method="post">
-               <label for="name">Name:</label>
-               <input type="text" id="name" name="name" required>
-               <label for="email">Email:</label>
-               <input type="email" id="email" name="email" required>
-               <label for="amount">Donation Amount ($):</label>
-               <input type="number" id="amount" name="amount" min="1" required>
-               <input type="submit" value="Donate Now">
-           </form>
-       </div>
-   </body>
-   <footer>
-    <br>
-     <p class = "c_footer">&copy; 2024 HealthHub. All rights reserved.</p>
-    <br>
-   </footer>
-   </html>
+            .subscription-form h2 {
+                text-align: center;
+            }
+            .subscription-form label {
+                display: block;
+                margin: 15px 0 5px;
+            }
+            .subscription-form input[type="text"],
+            .subscription-form input[type="email"] {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .subscription-form button {
+                width: 100%;
+                padding: 10px;
+                background-color: #acbda1;
+                border: none;
+                color: white;
+                font-size: 16px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .subscription-form button:hover {
+                background-color: #218838;
+            }
+        </style>
+    </head>
+    <body>
+
+    <div class="subscription-form">
+        <h2>Subscribe to our Newsletter</h2>
+        <form action="your-subscription-endpoint" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Subscribe</button>
+        </form>
+        <footer>
+            <p>&copy; 2024 HealthHub. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    </body>
+    
+</html>
